@@ -51,9 +51,6 @@ resource "aws_instance" "mimba_ec2" {
       aws configure set aws_secret_access_key ${var.aws_secret_key}
       aws configure set region ${var.aws_region}
       
-      # Copie des fichier vers 
-      sudo chmod 777 -R /var/www/html
-      aws s3 cp s3://${var.bucket_root_name}-mimba-terraform-ec2-s3-learn2023 /var/www/html --recursive
 
  EOF
 
