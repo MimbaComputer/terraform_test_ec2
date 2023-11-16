@@ -61,16 +61,9 @@ resource "aws_instance" "mimba_ec2" {
     Name = "mimba_ec2"
     Environment = "dev"
   }
-
-  depends_on = ["module.mimba_s3"]
 }
 
 
-variable bucket_root_name {}
-module "mimba_s3" {
-  source = "../s3_bucket/"
-  bucket_root_name= var.bucket_root_name
-}
 
 
 
