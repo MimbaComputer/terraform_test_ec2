@@ -1,9 +1,9 @@
 variable "aws_key_name" {
-    default = "AKIA2OICZEYYPTIW5KQC" 
+    default = "AKIA6ENYLPTBXSLZCNCS" 
 }
 
 variable "aws_secret_key" {
-    default = "9wQmQQ+jThcP/HAHg+fMBspAQiaI1tgSxBTSqfQQ" 
+    default = "C3KcDkAQubjuuTsCXZRefvDEkqEbl/2KSTbMSCav" 
 }
 
 variable "aws_region" {
